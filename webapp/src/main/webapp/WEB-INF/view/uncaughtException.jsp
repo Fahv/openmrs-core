@@ -1,12 +1,12 @@
 <%@page isErrorPage="true" %>
 <%@ page import="org.openmrs.web.WebUtil" %>
-<%@page import="org.openmrs.web.WebConstants" %>
+<%@page import="org.openmrs.web.WebConstants"%>
 <%@ page import="org.openmrs.api.context.UserContext" %>
 <%@ page import="org.openmrs.util.OpenmrsConstants" %>
-<%@page import="org.openmrs.api.APIAuthenticationException" %>
-<%@page import="org.openmrs.api.context.ContextAuthenticationException" %>
+<%@page import="org.openmrs.api.APIAuthenticationException"%>
+<%@page import="org.openmrs.api.context.ContextAuthenticationException"%>
 <%@ page
-	import="org.springframework.transaction.UnexpectedRollbackException" %>
+	import="org.springframework.transaction.UnexpectedRollbackException"%>
 <%@ include file="/WEB-INF/template/include.jsp" %>
 
 <%@ include file="/WEB-INF/template/headerMinimal.jsp" %>
