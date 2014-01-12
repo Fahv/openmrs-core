@@ -1,21 +1,21 @@
-<%@page isErrorPage="true"%>
-<%@ page import="org.openmrs.web.WebUtil"%>
-<%@page import="org.openmrs.web.WebConstants"%>
-<%@ page import="org.openmrs.api.context.UserContext"%>
-<%@ page import="org.openmrs.util.OpenmrsConstants"%>
-<%@page import="org.openmrs.api.APIAuthenticationException"%>
-<%@page import="org.openmrs.api.context.ContextAuthenticationException"%>
+<%@page isErrorPage="true" %>
+<%@ page import="org.openmrs.web.WebUtil" %>
+<%@page import="org.openmrs.web.WebConstants" %>
+<%@ page import="org.openmrs.api.context.UserContext" %>
+<%@ page import="org.openmrs.util.OpenmrsConstants" %>
+<%@page import="org.openmrs.api.APIAuthenticationException" %>
+<%@page import="org.openmrs.api.context.ContextAuthenticationException" %>
 <%@ page
-	import="org.springframework.transaction.UnexpectedRollbackException"%>
-<%@ include file="/WEB-INF/template/include.jsp"%>
+	import="org.springframework.transaction.UnexpectedRollbackException" %>
+<%@ include file="/WEB-INF/template/include.jsp" %>
 
-<%@ include file="/WEB-INF/template/headerMinimal.jsp"%>
+<%@ include file="/WEB-INF/template/headerMinimal.jsp" %>
 &nbsp;
-<%@page import="org.openmrs.util.OpenmrsUtil"%>
-<%@page import="org.openmrs.api.context.Context"%>
-<%@page import="org.openmrs.module.ModuleFactory"%>
-<%@page import="org.openmrs.module.Module"%>
-<%@page import="org.openmrs.ImplementationId"%>
+<%@page import="org.openmrs.util.OpenmrsUtil" %>
+<%@page import="org.openmrs.api.context.Context" %>
+<%@page import="org.openmrs.module.ModuleFactory" %>
+<%@page import="org.openmrs.module.Module" %>
+<%@page import="org.openmrs.ImplementationId" %>
 <br />
 <h2>
 	<openmrs:message code="uncaughtException.title" />
@@ -68,7 +68,7 @@
 	}
 </script>
 
-<%@ include file="/WEB-INF/view/authorizationHandlerInclude.jsp"%>
+<%@ include file="/WEB-INF/view/authorizationHandlerInclude.jsp" %>
 <%
 	out.println("<b>" + exception.getClass().getName() + "</b>");
 	if (exception.getMessage() != null)
@@ -236,4 +236,4 @@
 				value="Report Problem">
 		</form>
 
-	</div> <%@ include file="/WEB-INF/template/footerMinimal.jsp"%>
+	</div> <%@ include file="/WEB-INF/template/footerMinimal.jsp" %>
